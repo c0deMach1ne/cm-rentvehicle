@@ -5,9 +5,6 @@ local CanPay = false
 QBCore.Functions.CreateCallback('CM-RentVehicle:Server:CheckMoney', function(source, cb, price)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local bankMoney = 
-    
-    if QBCore.Functions.GetMoney()
 
     if Player.PlayerData.money['bank'] >= price or Player.PlayerData.money['cash'] >= price then
     	CanPay = true
